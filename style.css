@@ -462,7 +462,7 @@ body::after {
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
