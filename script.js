@@ -43,19 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Dynamic Hover Glow Effect for Experience Cards
-  const cards = document.querySelectorAll(".glass-card, .timeline-item, .project-card");
-  cards.forEach(card => {
-    card.addEventListener("mousemove", (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      card.style.setProperty("--mouse-x", `${x}px`);
-      card.style.setProperty("--mouse-y", `${y}px`);
-    });
-  });
-
   // Avatar Lightbox Modal
   const avatarImg = document.getElementById("avatar-img");
   const modal = document.getElementById("avatar-modal");
@@ -92,6 +79,25 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.key === "Escape" && modal.classList.contains("show")) {
         closeModal();
       }
+    });
+  }
+
+  // Floating Scroll to Top Button
+  const scrollTopBtn = document.getElementById("scroll-top-btn");
+  if (scrollTopBtn) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("is-visible");
+      } else {
+        scrollTopBtn.classList.remove("is-visible");
+      }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     });
   }
 });

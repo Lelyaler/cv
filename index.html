@@ -31,9 +31,6 @@
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <!-- Background decorative light spots -->
-    <div class="glow-bg-right"></div>
-
     <main class="resume-container">
       <!-- LEFT SIDEBAR -->
       <aside class="sidebar">
@@ -54,6 +51,15 @@
               <i data-lucide="download"></i>
               <span>Download PDF</span>
             </button>
+            <a
+              href="https://lelyaler.github.io/anketa/"
+              target="_blank"
+              class="btn btn-secondary btn-sm"
+              style="text-decoration: none"
+            >
+              <i data-lucide="file-text"></i>
+              <span>Резюме (RU)</span>
+            </a>
           </div>
 
           <div class="divider"></div>
@@ -229,10 +235,11 @@
                 <i data-lucide="palette"></i> Layout & Build Tools
               </h3>
               <div class="tags-list">
-                                <span class="tag">SCSS</span>
+                <span class="tag">Mobile-First</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">SCSS</span>
                 <span class="tag">BEM</span>
                 <span class="tag">Figma</span>
-                <span class="tag">Gulp</span>
                 <span class="tag">Webpack</span>
                 <span class="tag">Vite</span>
               </div>
@@ -302,7 +309,7 @@
           </h2>
           <div class="edu-list">
             <div class="edu-item">
-              <div class="edu-years">2017 2019</div>
+              <div class="edu-years">2017 — 2019</div>
               <h3 class="edu-title">Higher Education (Bachelor's)</h3>
               <p class="edu-inst">
                 IPP (Institute of Parliamentarism and Entrepreneurship)
@@ -310,35 +317,11 @@
               <p class="edu-inst">Major: Finance and Credit, Minsk</p>
             </div>
             <div class="edu-item">
-              <div class="edu-years">2014 2017</div>
+              <div class="edu-years">2014 — 2017</div>
               <h3 class="edu-title">Associate Degree / College</h3>
               <p class="edu-inst">Minsk College of Entrepreneurship</p>
-              <p class="edu-inst">Major: Operations in Logistics, Minsk</p>
+              <p class="edu-inst">Major: Banking, Minsk</p>
             </div>
-          </div>
-        </section>
-
-        <!-- Qualities Section -->
-        <section class="glass-card" id="qualities">
-          <h2 class="sidebar-section-title">
-            <i
-              data-lucide="sparkles"
-              style="
-                width: 16px;
-                height: 16px;
-                display: inline-block;
-                vertical-align: middle;
-                margin-right: 4px;
-              "
-            ></i>
-            Key Attributes
-          </h2>
-          <div class="tags-list">
-            <span class="tag">Team Collaboration</span>
-            <span class="tag">Time Management</span>
-            <span class="tag">Rapid Tech-Stack Adaptation</span>
-            <span class="tag">Critical Thinking</span>
-                        <span class="tag">Constructive Communication</span>
           </div>
         </section>
       </aside>
@@ -364,7 +347,10 @@
             hooks and WordPress REST API integration.
           </p>
           <p class="about-text" style="margin-top: 12px">
-            I transitioned into IT from the banking sector with a strong analytical foundation. I build interactive applications with <strong>JavaScript (ES6+)</strong>, <strong>React</strong>, and modern component architecture. I work with containerization via <strong>Docker</strong>, <strong>Webpack/Vite</strong> tooling, and automated deployment pipelines using <strong>GitLab CI &amp; GitHub Actions</strong>.
+            I transitioned into IT from the banking sector. I develop interactive web applications with
+            <strong>JavaScript (ES6+)</strong> and <strong>React</strong> (components, hooks, routing). I work with
+            containerization via <strong>Docker</strong>, modern bundlers (<strong>Webpack</strong>, <strong>Vite</strong>),
+            and automate deployments using <strong>GitLab CI &amp; GitHub Actions</strong>.
           </p>
         </section>
 
@@ -384,7 +370,7 @@
                   <h3 class="job-title">WordPress &amp; Frontend Developer</h3>
                   <span class="job-company">MaxBitSolution</span>
                 </div>
-                <span class="job-period">2024 2026</span>
+                <span class="job-period">2024 — Present</span>
               </div>
               <p class="job-desc">
                 Developing responsive interfaces, creating and customizing
@@ -395,7 +381,7 @@
                 <li>
                   Built Mobile First interfaces with a mobile-first priority
                   (90%+ of traffic in iGaming comes from mobile) and optimized
-                  Core Web Vitals (LCP, FID, CLS) page load speed improved by
+                  Core Web Vitals (LCP, INP, CLS) — page load speed improved by
                   30–40%, projects consistently stay in Google's green zone.
                   Made independent UX/UI decisions without Figma mockups.
                 </li>
@@ -462,7 +448,7 @@
                     >Freelance (Kwork, Habr Freelance, FL, Weblancer)</span
                   >
                 </div>
-                <span class="job-period">2023 2024</span>
+                <span class="job-period">2022 — 2024</span>
               </div>
               <p class="job-desc">
                 Turnkey website development, custom WordPress themes/plugins,
@@ -528,7 +514,7 @@
                     Bank)</span
                   >
                 </div>
-                <span class="job-period">2018 2022</span>
+                <span class="job-period">2018 — 2022</span>
               </div>
               <p class="job-desc">
                 Managed credit agreement processing workflows, coordinated B2B
@@ -536,7 +522,7 @@
                 and maintained internal bank reporting.
               </p>
               <p class="job-desc" style="margin-top: 12px">
-                In 2023, transitioned into web development to build a
+                In 2022, transitioned into web development to build a
                 professional career in IT.
               </p>
             </div>
@@ -547,7 +533,7 @@
             id="tech-showcase"
             style="
               margin-top: 40px;
-              border-top: 1px solid var(--card-border);
+              border-top: 1px solid rgba(255, 255, 255, 0.05);
               padding-top: 30px;
             "
           >
@@ -566,7 +552,7 @@
                 data-lucide="code-2"
                 style="width: 18px; height: 18px; color: var(--primary)"
               ></i>
-              Tech Stack & Tools
+              Tech Stack &amp; Tools
             </h3>
             <div class="tech-icons-grid">
               <div class="tech-icon-item" title="HTML5">
@@ -581,7 +567,11 @@
                 <i class="devicon-sass-original colored"></i>
                 <span class="tech-icon-name">SCSS</span>
               </div>
-                            <div class="tech-icon-item" title="Figma">
+              <div class="tech-icon-item" title="Tailwind CSS">
+                <i class="devicon-tailwindcss-original colored"></i>
+                <span class="tech-icon-name">Tailwind</span>
+              </div>
+              <div class="tech-icon-item" title="Figma">
                 <i class="devicon-figma-plain colored"></i>
                 <span class="tech-icon-name">Figma</span>
               </div>
@@ -610,9 +600,22 @@
                 <i class="devicon-woocommerce-plain colored"></i>
                 <span class="tech-icon-name">WooCommerce</span>
               </div>
-              <div class="tech-icon-item" title="Gulp">
-                <i class="devicon-gulp-plain colored"></i>
-                <span class="tech-icon-name">Gulp</span>
+              <div class="tech-icon-item" title="Gutenberg (Block API)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+                  <rect x="6" y="6" width="48" height="48" rx="10" stroke="#3858E9" stroke-width="3.5" fill="#3858E9" fill-opacity="0.14"/>
+                  <rect x="13" y="14" width="34" height="9" rx="2.5" fill="#3858E9"/>
+                  <rect x="13" y="27" width="15" height="19" rx="2.5" fill="#3858E9"/>
+                  <rect x="32" y="27" width="15" height="19" rx="2.5" fill="#3858E9"/>
+                </svg>
+                <span class="tech-icon-name">Gutenberg</span>
+              </div>
+              <div class="tech-icon-item" title="Advanced Custom Fields Pro">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -15.5 58 55" fill="none">
+                  <path d="M43.9986 23.8816H38.0521V0.0253448H53.9034V5.58064H43.9986V9.83762H53.334V15.2547H43.9986V23.8825V23.8816Z" fill="#00e5a3"/>
+                  <path d="M35.2772 13.8697C34.266 17.2858 30.667 19.317 27.1244 18.4664C23.5798 17.6128 21.3588 14.187 22.0946 10.7047C22.8294 7.22146 26.2572 4.92655 29.8582 5.50758C31.3334 5.70738 32.6937 6.41247 33.7074 7.50273C34.408 8.22394 34.9337 9.0963 35.2442 10.0526H40.96C40.2116 4.06425 34.9337 0.0320875 28.8022 0.0320875C25.5386 -0.00942939 22.391 1.24129 20.0459 3.51144C18.903 4.61761 17.997 5.94473 17.3831 7.41208C16.7693 8.87942 16.4603 10.4563 16.4751 12.0468C16.4751 18.8829 21.9739 23.9574 28.8042 23.9574C35.0028 23.9574 40.1084 19.9418 40.996 13.8697H35.2763H35.2772Z" fill="#00e5a3"/>
+                  <path d="M15.9476 20.4109H7.68573L6.33389 23.8776H0L9.69257 0H13.9165L23.9935 23.8854H17.3102L15.9476 20.4109ZM10.0381 14.5004L9.83174 15.0396H13.8493L13.7092 14.6347L11.8396 9.51446L10.039 14.5004H10.0381Z" fill="#00e5a3"/>
+                </svg>
+                <span class="tech-icon-name">ACF Pro</span>
               </div>
               <div class="tech-icon-item" title="Webpack">
                 <i class="devicon-webpack-plain colored"></i>
@@ -668,6 +671,16 @@
       <i data-lucide="check-circle-2"></i>
       <span id="toast-text">Copied!</span>
     </div>
+
+    <!-- Floating Scroll to Top Button -->
+    <button
+      id="scroll-top-btn"
+      class="scroll-top-btn"
+      title="Scroll to top"
+      aria-label="Scroll to top"
+    >
+      <i data-lucide="arrow-up"></i>
+    </button>
 
     <!-- Script -->
     <script src="script.js"></script>
